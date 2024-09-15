@@ -244,6 +244,7 @@ const About = () => {
                     {item.icons?.map((icon, itemIndex) => {
                       return (
                         <Link
+                          key={itemIndex}
                           href={item.link[itemIndex]}
                           target="_blank"
                           className="text-2xl text-white"

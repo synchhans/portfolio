@@ -29,10 +29,14 @@ const Work = () => {
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
               These are some highlighted works. I have developed a variety of
-              web and app projects, utilizing technologies I’m proficient in,
-              with a focus on responsive design and dynamic functionality.{" "}
+              web and app projects, utilizing technologies I&apos;m proficient
+              in, with a focus on responsive design and dynamic functionality.{" "}
               <br /> To see more of my work, visit{" "}
-              <Link href="https://github.com/mrglxor" target="_blank" className="text-accent">
+              <Link
+                href="https://github.com/mrglxor"
+                target="_blank"
+                className="text-accent"
+              >
                 my GitHub
               </Link>
               .
