@@ -12,7 +12,7 @@ const Socials = () => {
   return (
     <div className="flex items-center gap-x-5 text-lg">
       <Link
-        href="https://drive.google.com/file/d/10z32QjRN9xViWmnQNA3EYzKogtVBJ5vx/view?usp=sharing"
+        href="https://drive.google.com/file/d/1TfL1zUn2xXFclZ6Zl7BdPE_YQjfzdRNy/view?usp=drive_link"
         target="_blank"
         className="hover:text-accent transition-all duration-300"
       >
