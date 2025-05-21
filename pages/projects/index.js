@@ -33,7 +33,7 @@ const Work = () => {
               in, with a focus on responsive design and dynamic functionality.{" "}
               <br /> To see more of my work, visit{" "}
               <Link
-                href="https://github.com/mrglxor"
+                href="https://github.com/synchhans"
                 target="_blank"
                 className="text-accent"
               >
