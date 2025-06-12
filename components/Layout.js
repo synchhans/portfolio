@@ -19,6 +19,10 @@ const Layout = ({ children }) => {
       <Head>
         <title>.Muhamad Farhan</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="_discord.muhamadfarhan.vercel.app"
+          content="dh=a2164208b91cf6b69d713749c210b427a94ae2e6"
+        />
       </Head>
       <TopLeftImg />
       <Nav />
