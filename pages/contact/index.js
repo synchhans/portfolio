@@ -1,10 +1,16 @@
 import { BsArrowRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
+import SEO from "../../components/SEO";
 
 const Contact = () => {
   return (
     <div className="h-full bg-primary/30">
+      <SEO
+        title="Kontak Saya | Muhamad Farhan"
+        description="Hubungi saya lebih lanjut"
+        path="/contact"
+      />
       <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
         <div className="flex flex-col w-full max-w-[700px]">
           <motion.h2

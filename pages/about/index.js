@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import CountUp from "react-countup";
 
+import SEO from "../../components/SEO";
+
 import {
   FaHtml5,
   FaCss3,
@@ -141,6 +143,11 @@ const About = () => {
   const [index, setIndex] = useState(0);
   return (
     <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
+      <SEO
+        title="Tentang Saya | Muhamad Farhan"
+        description="Pelajari lebih lanjut tentang perjalanan karir, latar belakang pendidikan, dan teknologi yang saya kuasai sebagai software engineer."
+        path="/about"
+      />
       <Circles />
       <motion.div
         variants={fadeIn("right", 0.2)}

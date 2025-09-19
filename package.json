@@ -6,11 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
+    "caniuse-lite": "^1.0.30001743",
     "framer-motion": "^11.5.4",
     "next": "14.2.8",
+    "next-sitemap": "^4.2.3",
     "react": "18.3.1",
     "react-countup": "6.5.3",
     "react-dom": "18.3.1",

@@ -4,10 +4,16 @@ import Circles from "../../components/Circles";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 import Link from "next/link";
+import SEO from "../../components/SEO";
 
 const Work = () => {
   return (
     <div className="h-full bg-primary/30 py-36 flex items-center">
+      <SEO
+        title="Projek Saya | Muhamad Farhan"
+        description="Lihat lebih detail, Proyek apa saja yang sudah saya selesaikan"
+        path="/projects"
+      />
       <Circles />
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">

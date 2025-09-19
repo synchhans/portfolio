@@ -5,9 +5,16 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import ParticlesContainer from "../components/ParticlesContainer";
 
+import SEO from "../components/SEO";
+
 const Home = () => {
   return (
     <div className="bg-primary/60 h-full">
+      <SEO
+        title="Muhamad Farhan - Portfolio"
+        description="Selamat datang di portfolio saya. Saya adalah seorang software engineer dengan spesialisasi dalam pengembangan web, mobile, dan game."
+        path="/"
+      />
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
         <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
           <motion.h1
