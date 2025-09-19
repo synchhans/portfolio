@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import CountUp from "react-countup";
-
 import SEO from "../../components/SEO";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../variants";
+import Circles from "../../components/Circles";
+import Link from "next/link";
 
 import {
   FaHtml5,
@@ -14,7 +17,6 @@ import {
   FaGit,
   FaStackOverflow,
 } from "react-icons/fa";
-
 import {
   SiNextdotjs,
   SiFramer,
@@ -32,13 +34,39 @@ import {
   SiNetlify,
 } from "react-icons/si";
 
+const allIcons = {
+  FaHtml5,
+  FaCss3,
+  FaJs,
+  FaReact,
+  FaFigma,
+  FaBootstrap,
+  FaLaravel,
+  FaGit,
+  FaStackOverflow,
+  SiNextdotjs,
+  SiFramer,
+  SiAdobexd,
+  SiAdobephotoshop,
+  SiRedux,
+  SiTailwindcss,
+  SiMysql,
+  SiSqlite,
+  SiDart,
+  SiFlutter,
+  SiFirebase,
+  SiKotlin,
+  SiVercel,
+  SiNetlify,
+};
+
 const aboutData = [
   {
     title: "skills",
     info: [
       {
         title: "Mobile Development",
-        icons: [<SiDart />, <SiFlutter />, <SiFirebase />, <SiKotlin />],
+        icons: ["SiDart", "SiFlutter", "SiFirebase", "SiKotlin"],
         link: [
           "https://dart.dev",
           "https://flutter.dev",
@@ -49,15 +77,15 @@ const aboutData = [
       {
         title: "Web Development",
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaBootstrap />,
-          <SiTailwindcss />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <FaLaravel />,
-          <SiMysql />,
+          "FaHtml5",
+          "FaCss3",
+          "FaBootstrap",
+          "SiTailwindcss",
+          "FaJs",
+          "FaReact",
+          "SiNextdotjs",
+          "FaLaravel",
+          "SiMysql",
         ],
         link: [
           "https://html.spec.whatwg.org",
@@ -73,7 +101,7 @@ const aboutData = [
       },
       {
         title: "UI/UX Design",
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        icons: ["FaFigma", "SiAdobexd", "SiAdobephotoshop"],
         link: [
           "https://www.figma.com",
           "https://www.adobe.com",
@@ -82,17 +110,17 @@ const aboutData = [
       },
       {
         title: "Version Control",
-        icons: [<FaGit />],
+        icons: ["FaGit"],
         link: ["https://git-scm.com"],
       },
       {
         title: "Technical Resources",
-        icons: [<FaStackOverflow />],
+        icons: ["FaStackOverflow"],
         link: ["https://stackoverflow.com"],
       },
       {
         title: "Cloud Deployment",
-        icons: [<SiVercel />, <SiNetlify />],
+        icons: ["SiVercel", "SiNetlify"],
         link: ["https://vercel.com", "https://www.netlify.com"],
       },
     ],
@@ -102,7 +130,7 @@ const aboutData = [
     info: [
       {
         title: "Fullstack Developer - PT. Winnicode",
-        stage: "August to December - 2024",
+        stage: "August to December - 2025",
       },
       {
         title: "Mobile Development - Bangkit Academy",
@@ -110,7 +138,7 @@ const aboutData = [
       },
       {
         title: "Freelance",
-        stage: "2022 - 2024",
+        stage: "2022 - 2025",
       },
     ],
   },
@@ -133,11 +161,14 @@ const aboutData = [
   },
 ];
 
-import { motion } from "framer-motion";
-import { fadeIn } from "../../variants";
-
-import Circles from "../../components/Circles";
-import Link from "next/link";
+const DynamicIcon = ({ name }) => {
+  const IconComponent = allIcons[name];
+  if (!IconComponent) {
+    console.warn(`Icon "${name}" not found.`);
+    return null;
+  }
+  return <IconComponent />;
+};
 
 const About = () => {
   const [index, setIndex] = useState(0);
@@ -248,15 +279,15 @@ const About = () => {
                   <div className="hidden md:flex">-</div>
                   <div>{item.stage}</div>
                   <div className="flex gap-x-4">
-                    {item.icons?.map((icon, itemIndex) => {
+                    {item.icons?.map((iconName, iconIndex) => {
                       return (
                         <Link
-                          key={itemIndex}
-                          href={item.link[itemIndex]}
+                          key={iconIndex}
+                          href={item.link[iconIndex]}
                           target="_blank"
                           className="text-2xl text-white"
                         >
-                          {icon}
+                          <DynamicIcon name={iconName} />
                         </Link>
                       );
                     })}

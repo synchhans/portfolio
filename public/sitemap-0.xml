@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url><loc>https://muhamadfarhan.vercel.app</loc><lastmod>2025-09-19T04:08:41.900Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://muhamadfarhan.vercel.app/about</loc><lastmod>2025-09-19T04:08:41.902Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://muhamadfarhan.vercel.app/admin/analytics</loc><lastmod>2025-09-19T04:08:41.902Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://muhamadfarhan.vercel.app/admin/dashboard</loc><lastmod>2025-09-19T04:08:41.902Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://muhamadfarhan.vercel.app/admin/messages</loc><lastmod>2025-09-19T04:08:41.902Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://muhamadfarhan.vercel.app/admin/projects</loc><lastmod>2025-09-19T04:08:41.902Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://muhamadfarhan.vercel.app/admin/settings</loc><lastmod>2025-09-19T04:08:41.902Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://muhamadfarhan.vercel.app/admin/skills</loc><lastmod>2025-09-19T04:08:41.902Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://muhamadfarhan.vercel.app/contact</loc><lastmod>2025-09-19T04:08:41.902Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://muhamadfarhan.vercel.app/login</loc><lastmod>2025-09-19T04:08:41.902Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://muhamadfarhan.vercel.app/projects</loc><lastmod>2025-09-19T04:08:41.902Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+</urlset>

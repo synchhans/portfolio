@@ -74,7 +74,7 @@ const SettingsPage = () => {
       setMessage(`Error: ${error.message}`);
     } finally {
       setIsSaving(false);
-      setTimeout(() => setMessage(""), 3000); 
+      setTimeout(() => setMessage(""), 3000);
     }
   };
 
@@ -247,7 +247,7 @@ const SettingsPage = () => {
 
         <fieldset className="border border-gray-700 p-4 rounded-md">
           <legend className="text-xl font-semibold px-2">
-            Halaman "About"
+            Halaman &apos;About&apos;
           </legend>
           <div className="space-y-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
